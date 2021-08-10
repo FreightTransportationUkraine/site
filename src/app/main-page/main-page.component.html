@@ -1,0 +1,97 @@
+<div class="bg" [style.background-image]="'url(../../assets/img/background.png)'">
+  <div class="main-div">
+    <div style="text-align: center" class="menu-full example-button-row">
+      <button type="button" mat-raised-button>
+        О компании
+      </button>
+      <button type="button" mat-raised-button color="primary" routerLink="/owners" routerLinkActive="active">
+        Грузоотправителям
+      </button>
+      <img
+        class="child"
+        src="../../assets/img/logo_2.png"
+        style="height: 175px; width: 200px"
+      />
+      <button type="button" mat-raised-button color="primary" routerLink="/drivers" routerLinkActive="active">
+        Грузоперевозчикам
+      </button>
+      <button type="button" mat-raised-button color="primary" routerLink="/contacts" routerLinkActive="active">
+        Обратная связь
+      </button>
+    </div>
+    <div class="menu-burger">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <span mat-menu-item matTooltip="О компании">О компании</span>
+        <hr>
+        <button mat-menu-item routerLink="/owners" routerLinkActive="active">
+          <span>Грузоотправителям</span>
+        </button>
+        <button mat-menu-item routerLink="/drivers" routerLinkActive="active">
+          <span>Грузоперевозчикам</span>
+        </button>
+        <button mat-menu-item routerLink="/contacts" routerLinkActive="active">
+          <span>Обратная связь</span>
+        </button>
+      </mat-menu>
+    </div>
+    <!-- Colored FAB button -->
+    <div class="parent-text">
+          <span class="center-styled-text">Drop in cargo – грузоперевозки в смартфоне<br/><br/>
+            <span class="center-styled-text-smaller">
+              Найти попутный груз и попутный транспорт стало так же просто, как
+              вызвать такси!
+            </span>
+          </span>
+    </div>
+    <div style="text-align: center">
+      <button
+        style="font-size: 24px; width: 500px; height: 50px"
+        type="button" mat-raised-button color="primary">
+        Загрузить бесплатно
+      </button>
+    </div>
+    <div class="parent-qr menu-full">
+      <div class="child-qr">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.dropincargo"
+          target="_blank"
+        ><img class="image-size-format" src="../../assets/img/android.jpeg"/></a></div>
+      <div>
+        <img class="img-opacity" src="../../assets/img/phones.png" style="opacity: 1"/>
+      </div>
+      <div class="child-qr">
+        <a
+          href="https://apps.apple.com/ru/app/drop-in-cargo/id1538629933"
+          target="_blank"
+        >
+          <img class="image-size-format" src="../../assets/img/ios.jpeg"/><br/>
+        </a>
+      </div>
+    </div>
+    <div class="parent-qr-main menu-burger">
+      <div>
+        <img class="img-opacity" src="../../assets/img/phones.png" style="opacity: 1"/>
+      </div>
+    </div>
+    <div class="parent-qr-wrap menu-burger">
+      <div class="child-qr-mobile">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.dropincargo"
+          target="_blank"
+        ><img class="image-size-format" src="../../assets/img/android.jpeg"/></a></div>
+
+      <div class="child-qr-mobile">
+        <a
+          href="https://apps.apple.com/ru/app/drop-in-cargo/id1538629933"
+          target="_blank"
+        >
+          <img class="image-size-format" src="../../assets/img/ios.jpeg"/><br/>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

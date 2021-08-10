@@ -1,0 +1,49 @@
+<div class="bg" [style.background-image]="'url(../../assets/img/background.png)'">
+  <div class="main-div">
+    <div style="text-align: center" class="menu-full example-button-row">
+      <button type="button" mat-raised-button color="primary" routerLink="/" routerLinkActive="active">
+        О компании
+      </button>
+      <button type="button" mat-raised-button color="primary" routerLink="/owners" routerLinkActive="active">
+        Грузоотправителям
+      </button>
+      <img
+        class="child"
+        src="../../assets/img/logo_2.png"
+        style="height: 175px; width: 200px"
+      />
+      <button type="button" mat-raised-button color="primary" routerLink="/drivers" routerLinkActive="active">
+        Грузоперевозчикам
+      </button>
+      <button type="button" mat-raised-button>
+        Обратная связь
+      </button>
+    </div>
+    <div class="menu-burger">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <span mat-menu-item matTooltip="Обратная связь">Обратная связь</span>
+        <hr>
+        <button mat-menu-item routerLink="/" routerLinkActive="active">
+          <span>О компании</span>
+        </button>
+        <button mat-menu-item routerLink="/owners" routerLinkActive="active">
+          <span>Грузоотправителям</span>
+        </button>
+        <button mat-menu-item routerLink="/drivers" routerLinkActive="active">
+          <span>Грузоперевозчикам</span>
+        </button>
+      </mat-menu>
+    </div>
+    <!-- Colored FAB button -->
+    <div class="parent-text">
+      <span class="center-styled-text">Drop in cargo – грузоперевозки в смартфоне</span>
+    </div><br />
+    <hr>
+    <div style="text-align: center"><br /><br />
+      <span class="center-styled-text-smaller">Email: <a href="mailto:info@dropincargo.com">info@dropincargo.com</a></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,138 @@
+<div class="bg" [style.background-image]="'url(../../assets/img/background.png)'">
+  <div class="main-div">
+    <div style="text-align: center" class="menu-full example-button-row">
+      <button type="button" mat-raised-button color="primary" routerLink="/" routerLinkActive="active">
+        О компании
+      </button>
+      <button type="button" mat-raised-button color="primary" routerLink="/owners" routerLinkActive="active">
+        Грузоотправителям
+      </button>
+      <img
+        class="child"
+        src="../../assets/img/logo_2.png"
+        style="height: 175px; width: 200px"
+      />
+      <button type="button" mat-raised-button>
+        Грузоперевозчикам
+      </button>
+      <button type="button" mat-raised-button color="primary" routerLink="/contacts" routerLinkActive="active">
+        Обратная связь
+      </button>
+    </div>
+    <div class="menu-burger">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <span mat-menu-item matTooltip="Грузоперевозчикам">Грузоперевозчикам</span>
+        <hr>
+        <button mat-menu-item routerLink="/" routerLinkActive="active">
+          <span>О компании</span>
+        </button>
+        <button mat-menu-item routerLink="/owners" routerLinkActive="active">
+          <span>Грузоотправителям</span>
+        </button>
+        <button mat-menu-item routerLink="/contacts" routerLinkActive="active">
+          <span>Обратная связь</span>
+        </button>
+      </mat-menu>
+    </div>
+    <!-- Colored FAB button -->
+    <div class="parent-text">
+          <span class="center-styled-text">Drop in cargo – грузоперевозки в смартфоне</span>
+    </div>
+    <div><br /><hr /><br />
+      <div class="page page-passenger">
+
+        <img src="../../assets/img/0.jpg" align="left" style="margin-right: 20px">
+        <p>Скачайте мобильное приложение DropInCargo на свой телефон. Доступно в Play Market и AppStore.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/01.jpg" align="right" style="margin-left: 10px">
+        <p>Для регистрации, введите свои данные. Для подтверждения номера вы получите SMS с проверочным кодом, введите его.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/02.jpg" align="left" style="margin-right: 20px">
+        <p>Нажмите подтвердить.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/03.jpg" align="right" style="margin-left: 10px">
+        <p>В поле "Код из SMS" введите цифры, пришедший Вам в смс. Будьте внимательны - неверно введенный код не позволит завершить регистрацию.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/1.jpg" align="left" style="margin-right: 20px">
+        <p>Нажмите на гамбургер меню для того, чтобы завершить регистрацию.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/04.jpg" align="right" style="margin-left: 10px">
+        <p>Нажмите на Ваше имя и/или фото чтобы проверить введенные Вами данные и дополнить информацию.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/05.jpg" align="left" style="margin-right: 20px">
+        <p>Для изменения информации - нажмите кнопку "Редактировать аккаунт".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/04.jpg" align="right" style="margin-left: 10px">
+        <p>Чтобы создать свой автомобиль в приложении - в гамбургер меню выберите "Мой транспорт".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/3.jpg" align="left" style="margin-right: 20px">
+        <p>Чтобы добавить автомобиль - в открывшемся окне нажмите "Добавить транспорт".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/4.jpg" align="right" style="margin-left: 10px">
+        <p>Заполните информацию об автомобиле.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/7.jpg" align="left" style="margin-right: 20px">
+        <p>Чтобы добавить фото автомобиля - нажмите на секции "Добавьте фото автомобиля".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/8.jpg" align="right" style="margin-right: 20px">
+        <p>В списке "Мой транспорт" появился Ваш новый автомобиль.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/1.jpg" align="left" style="margin-right: 20px">
+        <p>Чтобы добавить свободный автомобиль в работу - в основном меню выберите "Добавить свободную машину".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/25.jpg" align="right" style="margin-right: 20px">
+        <p>В открытом окне на карте укажите точку, где находится сводобный транспорт и нажмите "Выбрать автомобиль".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/26.jpg" align="left" style="margin-right: 20px">
+        <p>Выберите автомобиль из списка доступных машин.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/27.jpg" align="right" style="margin-right: 20px">
+        <p>Машина появится на карте.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/1.jpg" align="left" style="margin-right: 20px">
+        <p>Чтобы самостоятельно выбрать активеую заявку из списка - в основном меню нажмите на кнопку "Поиск заявок".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/19.jpg" align="right" style="margin-right: 20px">
+        <p>Вы увидите список активных заявок. Для выбора заявок, подходящих по категориям - воспользуйтесь фильтром в правом нижнем углу.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/20.jpg" align="left" style="margin-right: 20px">
+        <p>Если Вы откроете подходящую заявку, нажав на ней в спике - Вы увидите детали по заявке. Вы можете предложить другую цену или забрать заявку в работу. Если заказчику понравится Ваше предложение и он его примет - Вы получите уведомление.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/22.jpg" align="right" style="margin-right: 20px">
+        <p>Ваше предложение появится внизу заявки и Вы сможете отслеживать ее статус.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/23.jpg" align="left" style="margin-right: 20px">
+        <p>Если Вы забираете зявку в работу - Вы автоматически соглашаетесь с ценой. Вам откроются контакты заказчика и Вы можете созвониться с ним.</p>
+        <div class="clear"></div>
+
+        <h3>Правила сервиса:</h3>
+        <ul>
+           <li>Если вы водитель и передумали ехать, отмените заказ в приложении или позвоните заказчику.</li>
+        </ul><br /><br />
+      </div>
+    </div>
+  </div>
+</div>

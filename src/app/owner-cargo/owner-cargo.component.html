@@ -1,0 +1,110 @@
+<div class="bg" [style.background-image]="'url(../../assets/img/background.png)'">
+  <div class="main-div">
+    <div style="text-align: center" class="menu-full example-button-row">
+      <button type="button" mat-raised-button color="primary" routerLink="/" routerLinkActive="active">
+        О компании
+      </button>
+      <button type="button" mat-raised-button>
+        Грузоотправителям
+      </button>
+      <img
+        class="child"
+        src="../../assets/img/logo_2.png"
+        style="height: 175px; width: 200px"
+      />
+      <button type="button" mat-raised-button color="primary" routerLink="/drivers" routerLinkActive="active">
+        Грузоперевозчикам
+      </button>
+      <button type="button" mat-raised-button color="primary" routerLink="/contacts" routerLinkActive="active">
+        Обратная связь
+      </button>
+    </div>
+    <div class="menu-burger">
+      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <span mat-menu-item matTooltip="Грузоотправителям">Грузоотправителям</span>
+        <hr>
+        <button mat-menu-item routerLink="/" routerLinkActive="active">
+          <span>О компании</span>
+        </button>
+        <button mat-menu-item routerLink="/drivers" routerLinkActive="active">
+          <span>Грузоперевозчикам</span>
+        </button>
+        <button mat-menu-item routerLink="/contacts" routerLinkActive="active">
+          <span>Обратная связь</span>
+        </button>
+      </mat-menu>
+    </div>
+    <!-- Colored FAB button -->
+    <div class="parent-text">
+      <span class="center-styled-text">Drop in cargo – грузоперевозки в смартфоне</span>
+    </div>
+    <div><br /><hr /><br />
+      <div class="page page-passenger">
+
+        <img src="../../assets/img/0.jpg" align="left" style="margin-right: 20px">
+        <p>Скачайте мобильное приложение DropInCargo на свой телефон. Доступно в Play Market и AppStore.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/01.jpg" align="right" style="margin-left: 10px">
+        <p>Для регистрации, введите свои данные. Для подтверждения номера вы получите SMS с проверочным кодом, введите его.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/02.jpg" align="left" style="margin-right: 20px">
+        <p>Нажмите подтвердить.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/03.jpg" align="right" style="margin-left: 10px">
+        <p>В поле "Код из SMS" введите цифры, пришедший Вам в смс. Будьте внимательны - неверно введенный код не позволит завершить регистрацию.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/1.jpg" align="left" style="margin-right: 20px">
+        <p>Нажмите на гамбургер меню для того, чтобы завершить регистрацию.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/04.jpg" align="right" style="margin-left: 10px">
+        <p>Нажмите на Ваше имя и/или фото чтобы проверить введенные Вами данные и дополнить информацию.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/05.jpg" align="left" style="margin-right: 20px">
+        <p>Для изменения информации - нажмите кнопку "Редактировать аккаунт".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/1.jpg" align="right" style="margin-left: 10px">
+        <p>Чтобы создать заявку в приложении - в основном меню выберите "Создать заявку".</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/10.jpg" align="left" style="margin-right: 20px">
+        <p>Заполните данные по вашей заявке.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/11.jpg" align="right" style="margin-left: 10px">
+        <p>"Место погрузки" и "Место выгрузки" выбирайте на карте или введите адрес вверху.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/13.jpg" align="left" style="margin-right: 20px">
+        <p>Для некоторых полей при заполнении выпадает список параметров. Вы можете указать несколько значений. После выбора параметров нажмите кнопку "Подтвердить"</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/17.jpg" align="right" style="margin-right: 20px">
+        <p>После внесения всех данных - нажмите кнопку "Создать". Если кнопка неактивна - проверьте корректность заполнения полей (незаполненные поля или заполненные с ошибками будут подсвечены красным цветом).</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/18.jpg" align="left" style="margin-right: 20px">
+        <p>После успешного создания заявки Вы должны увидет уведомление.</p>
+        <div class="clear"></div>
+
+        <img src="../../assets/img/28.jpg" align="right" style="margin-right: 20px">
+        <p>Чтобы выбрать машины по конктретному месту, типу загрузки, типу кузова и другим параметрам - воспользуйтесь фильтром.</p>
+        <div class="clear"></div>
+
+        <h3>Правила сервиса:</h3>
+        <ul>
+          <li>Если вы заказчик и передумали ехать, отмените заказ в приложении или позвоните водителю.</li>
+        </ul><br /><br />
+      </div>
+    </div>
+  </div>
+</div>
